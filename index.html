@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Love Arcade 💜💙</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔐 LOGIN -->
+<div id="login" class="screen">
+
+  <div class="card">
+
+    <h1 class="title">💜 LOVE ARCADE 💙</h1>
+
+    <div class="inputBox">
+      <input id="pass" type="password" placeholder="Password">
+      <button onclick="togglePass()">👁️</button>
+    </div>
+
+    <button class="btn" onclick="unlock()">UNLOCK 💖</button>
+
+    <p id="msg"></p>
+    <p class="hint">Hint: Cs + Month 💜</p>
+
+  </div>
+
+</div>
+
+<!-- 🎮 MENU -->
+<div id="menuScreen" class="hidden">
+
+  <h1 class="title">💜 Choose Game 💙</h1>
+
+  <div class="bigMenu">
+
+    <button onclick="openGame('wheel')">🎡 SPIN WHEEL</button>
+    <button onclick="openGame('heart')">💜 HEART CATCH</button>
+    <button onclick="openGame('told')">💬 TRUTH / DARE</button>
+    <button onclick="openGame('love')">💖 WHY I LOVE YOU</button>
+
+  </div>
+
+</div>
+
+<!-- 🎮 GAME SCREEN -->
+<div id="gameScreen" class="hidden">
+
+  <button class="backBtn" onclick="backMenu()">⬅ BACK</button>
+
+  <!-- 🎡 WHEEL -->
+  <div id="wheelGame" class="game hidden">
+    <h2>🎡 Spin My Wheel</h2>
+
+    <div id="wheel"></div>
+
+    <button onclick="spinWheel()">SPIN 💫</button>
+
+    <h1 id="wheelResult"></h1>
+  </div>
+
+  <!-- 💜 HEART -->
+  <div id="heartGame" class="game hidden">
+    <h2>💜 Heart Catch</h2>
+
+    <p>Score: <span id="score">0</span></p>
+
+    <div id="heartArea"></div>
+  </div>
+
+  <!-- 💬 TRUTH OR DARE -->
+  <div id="toldGame" class="game hidden">
+
+    <h2>💬 Truth or Dare</h2>
+
+    <div class="choiceBox">
+      <button class="truthBtn" onclick="pickTruth()">TRUTH</button>
+      <button class="dareBtn" onclick="pickDare()">DARE</button>
+    </div>
+
+    <h2 id="toldResult"></h2>
+
+    <h3>📝 Answers</h3>
+    <ul id="answerList"></ul>
+
+  </div>
+
+  <!-- 💖 LOVE -->
+  <div id="loveGame" class="game hidden">
+
+    <h2>💖 Why I Love You</h2>
+
+    <div class="loveGrid">
+
+      <div class="box">God-fearing 💜</div>
+      <div class="box">Faithful 💙</div>
+      <div class="box">Kind 💜</div>
+      <div class="box">Smart 💙</div>
+      <div class="box">Talented 💜</div>
+      <div class="box">Gwapoo 💙</div>
+
+      <div class="box wide">You make me feel safe 💜</div>
+      <div class="box wide">You always support me 💙</div>
+      <div class="box wide">You are my home 💜</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
