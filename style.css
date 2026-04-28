@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Quicksand;
+  background: radial-gradient(circle,#0b0f2f,#1e1b4b);
+  color: white;
+  text-align: center;
+}
+
+/* 🔐 LOGIN CENTER */
+.screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* 💜 TITLE */
+.title {
+  font-family: Pacifico;
+}
+
+/* 🔐 INPUT */
+.inputBox {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+/* 🎮 BUTTONS */
+.btn, .bigMenu button {
+  padding: 15px;
+  margin: 10px auto;
+  display: block;
+  width: 80%;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(45deg,#8a2be2,#3a86ff);
+  color: white;
+  cursor: pointer;
+}
+
+/* 🔙 BACK */
+.backBtn {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 10px;
+  background: red;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+/* 🎡 WHEEL */
+#wheel {
+  width: 220px;
+  height: 220px;
+  margin: auto;
+  border-radius: 50%;
+  background: conic-gradient(#ff4d6d,#8338ec,#3a86ff,#06d6a0,#ffbe0b,#fb5607);
+  transition: 4s;
+}
+
+/* 💬 TRUTH / DARE */
+.choiceBox {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.truthBtn {
+  background: green;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+
+.dareBtn {
+  background: red;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+
+/* 💖 LOVE BOXES */
+.loveGrid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.box {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+/* 💜 HEART */
+#heartArea {
+  height: 200px;
+  position: relative;
+}
+
+/* ❌ HIDE */
+.hidden {
+  display: none;
+}
